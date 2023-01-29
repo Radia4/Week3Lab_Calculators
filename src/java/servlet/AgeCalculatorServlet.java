@@ -27,7 +27,7 @@ public class AgeCalculatorServlet extends HttpServlet{
         try{
             if (!a.equals("")){
                 int age = Integer.parseInt(a);
-                request.setAttribute("Message","Your age on your next birthday will be " + (age +1));
+                request.setAttribute("Message","Your age on your next birthday will be " + (age + 1));
             }else{
                 request.setAttribute("Message","You must give your current age");
             }
